@@ -1,48 +1,97 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Mobile Accessories</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="YOUR_API_KEY"></script>
-    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+  <title>MyShop</title>
+  <style>
+    /* CSS for Navbar */
+    .navbar {
+      background-color: blue;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    .navbar img {
+      width: 50px;
+    }
+    /* CSS for Card List */
+    .card-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      width: 300px;
+      margin: 20px;
+      background-color: white;
+      box-shadow: 2px 2px 10px gray;
+      padding: 20px;
+    }
+    .card img {
+      width: 100%;
+    }
+    .card h3 {
+      margin-top: 20px;
+    }
+    .card p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .card input {
+      margin-top: 20px;
+    }
+    .card button {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="product1.jpg" alt="Product 1">
-                    <div class="caption">
-                        <h3>Product 1</h3>
-                        <p>Price: $10</p>
-                        <p>
-                            <a href="#" class="snipcart-add-item"
-                                data-item-id="product1"
-                                data-item-name="Product 1"
-                                data-item-price="10"
-                                data-item-image="product1.jpg"
-                                data-item-url="/"
-                                data-item-description="Some description">
-                                Add to cart
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="thumbnail">
-                    <img src="product2.jpg" alt="Product 2">
-                    <div class="caption">
-                        <h3>Product 2</h3>
-                        <p>Price: $20</p>
-                        <p>
-                            <a href="#" class="snipcart-add-item"
-                                data-item-id="product2"
-                                data-item-name="Product 2"
-                                data-item-price="20"
-                                data-item-image="product2
+  <div class="navbar">
+    <a href="#">
+      <img src="https://i.imgur.com/nTj3Fxx.png" alt="MyShop Logo">
+    </a>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+    </div>
+    <a href="#">
+      <img src="https://image.flaticon.com/icons/svg/2/2772.svg" alt="Cart Icon">
+    </a>
+  </div>
+  <div class="card-list">
+    <div class="card">
+      <img src="https://i.imgur.com/lKM0R3g.jpg" alt="Accessory 1">
+      <h3>Accessory 1</h3>
+      <p>$20</p>
+      <input type="number" placeholder="Quantity">
+      <button>Buy</button>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/JLjM7gT.jpg" alt="Accessory 2">
+      <h3>Accessory 2</h3>
+      <p>$25</p>
+      <input type="number" placeholder="Quantity">
+      <button>Buy</button>
+    </div>
+    <div class="card">
+      <img src="https://i.imgur.com/2lCjF1q.jpg" alt="Accessory 3">
+      <h3>Accessory 3</h3>
+      <p>$30</p>
+      <input type="number" placeholder "Quantity">
+<button>Buy</button>
+</div>
+
+  </div>
+</body>
+</html>
